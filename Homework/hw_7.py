@@ -31,21 +31,20 @@ print(palindrom(188))
 Список будет заполняться рандомными целыми числами. Рекомендую использовать несколько функций
 (для заполнения списка целыми числами, для подсчета количества) '''
 
-def symbols_counting(func):
-    def wrapper():
-        func()
-        if list_num == set(list_num):
-            print('there are no the same elements')
-        else:
-            count = len(list_num) - len(set(list_num))
-            print(f'same numbers appear {count} times')
-        return wrapper
+def symbols_counting(list_num):
+    if list_num == set(list_num):
+        print('Sorry! There are no the same elements')
+    else:
+        count = len(list_num) - len(set(list_num))
+        print(f'The same numbers appear {count} times')
 
-@symbols_counting
+
 def my_list():
     while True:
-        a = int(input('enter a number in the list: '))
+        a = int(input('Enter a number in the list: '))
         list_num.append(a)
+        print(f'Your list is ', list_num)
+        symbols_counting(list_num)
 
 
 list_num = []
