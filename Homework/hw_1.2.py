@@ -41,9 +41,10 @@ likes()
 def my_lists():
     list1 = input('enter the first list: ')
     list2 = input('enter the second list: ')
-    list1=set(list1.split(sep=','))
-    list2=set(list2.split(sep=','))
+    list1 = set(list1.split(sep=','))
+    list2 = set(list2.split(sep=','))
     print(list1.difference(list2))
+
 
 my_lists()
 
