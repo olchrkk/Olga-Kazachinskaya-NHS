@@ -5,13 +5,16 @@ from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
 
 
-class CustomUser(AbstractBaseUser, PermissionsMixin):
+class CustomUserMixin:
+    date_created = models.DateTimeField(auto_now_add=True, blank=True)
+    date_updated = models.DateTimeField(auto_now=True, blank=True)
+
+
+class CustomUser(AbstractBaseUser, PermissionsMixin, CustomUserMixin):
     email = models.EmailField(_('email address'), unique=True)
     first_name = models.CharField(max_length=50, null=True, blank=True)
     last_name = models.CharField(max_length=50, null=True, blank=True)
 
-    date_created = models.DateTimeField(auto_now_add=True, blank=True)
-    date_updated = models.DateTimeField(auto_now=True, blank=True)
     is_staff = models.BooleanField(default=False)
     is_superuser = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)

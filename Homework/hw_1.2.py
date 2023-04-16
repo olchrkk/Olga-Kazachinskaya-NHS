@@ -37,16 +37,13 @@ likes()
 
 '''3. Напишите программу, которая принимает два списка и выводит все элементы первого, которых нет во втором. '''
 
+
 def my_lists():
     list1 = input('enter the first list: ')
     list2 = input('enter the second list: ')
-    list1=list1.split(sep=',')
-    list2=list2.split(sep=',')
-    list3=[]
-    for i in list1:
-        if i not in list2:
-            list3.append(i)
-    print(list3)
+    list1=set(list1.split(sep=','))
+    list2=set(list2.split(sep=','))
+    print(list1.difference(list2))
 
 my_lists()
 
