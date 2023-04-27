@@ -1,0 +1,5 @@
+
+Upython:S1481"1Remove the unused local variable "lst_int_array".(ÿ³«ÿÿÿÿÿ8İ¬Ä¥ú0
+ypython:S1542"URename function "mylistOfNumbers" to match the regular expression ^[a-z_][a-z0-9_]*$.(Éñ­ªüÿÿÿÿ8İ¬Ä¥ú0
+opython:S1542)"PRename function "findNumber" to match the regular expression ^[a-z_][a-z0-9_]*$.(Ó¶‘8İ¬Ä¥ú0
+Opython:S1481+"+Remove the unused local variable "num_lst".(¶ÙÈ×úÿÿÿÿ8İ¬Ä¥ú0

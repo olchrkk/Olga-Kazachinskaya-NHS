@@ -55,4 +55,3 @@ def my_list():
 list_num = []
 
 my_list()
-

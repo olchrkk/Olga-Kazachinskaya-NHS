@@ -4,7 +4,7 @@
 
 def delete_symbols():
     word = input('enter a word: ')
-    print('error!') if len(word) < 2 else print(word[1:-1])
+    raise ValueError('len <=2') if len(word) <= 2 else print(word[1:-1])
 
 
 delete_symbols()
