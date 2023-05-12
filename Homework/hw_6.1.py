@@ -36,10 +36,11 @@ print(first_index_A(['apple', 'banana', 'america']))
 
 '''6. Напишите функцию, которая принимает на вход список чисел и возвращает список чисел, которые больше 10 и меньше 20. '''
 
-# def between_numbers(array):
-#     return list(filter(lambda x: 10<x<20, array))
-#
-# print(even_numbers([20, 1, 11, 5, 18, 25]))
+def between_numbers(array):
+    # return list(filter(lambda x: 10<x<20, array))
+    return list(filter(lambda x: x in range(10,20), array))
+
+print(even_numbers([20, 1, 11, 5, 18, 25]))
 
 '''7. Напишите функцию, которая принимает на вход список строк и возвращает список строк, которые содержат букву "e". '''
 
