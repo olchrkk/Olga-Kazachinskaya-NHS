@@ -1,5 +1,6 @@
 '''1. Напишите функцию sum_range(start, end), которая суммирует все целые числа от значения «start» до величины «end» включительно.
 Если пользователь задаст первое число большее чем второе, просто поменяйте их местами.  '''
+from collections import Counter
 
 
 def funk(start_new,end_new):
@@ -38,6 +39,16 @@ def sum_of_same_numbers(lst):
             my_sum += 1
     return my_sum
 
+# 2 solution
+# def count_duplicates(array):
+#     counter_a=Counter(array)
+#     count_a_val = Counter(array).values()
+#     res = 0
+#     for i in counter_a:
+#         if i != 1:
+#             res += i
+#     return res
+
 print(sum_of_same_numbers([1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 11, 5, 5, 6]))
 
 ''' 3. Написать функцию, принимающую число и возвращающую ближайший к этому числу палиндром.
@@ -59,6 +70,18 @@ def palindrome():
             return num
     else:
         raise ValueError('Введите число!')
+
+# 2 solution
+#     def nearest_pal(num):
+#         palindrome_up, palindrome_down = num, num
+#         while str(palindrome_up) != str(palindrome_up)[::-1]:
+#             palindrome_down += 1
+#         while str(palindrome_down) != str(palindrome_down)[::-1]:
+#             palindrome_down -= 1
+#         if num - palindrome_down > palindrome_up - num:
+#             return palindrome_up
+#         else:
+#             return palindrome_down
 
 
 print(palindrome())
