@@ -1,6 +1,5 @@
 # Django #
 **/__pycache__/
-**/migrations/
 *.pyc
 *.log
 *.pot
