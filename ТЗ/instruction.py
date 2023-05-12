@@ -1,5 +1,5 @@
 '''
-ч.1
+1.
 Реализовать модель User'a в django, с полями first_name, last_name, email, image.
 Добавь миксин с полями date_created, date_updated.
 Регистрация пользователя должна проходить с помощью полей email, password.

@@ -180,10 +180,9 @@ print(sum_of_num(lst))
 
 '''6. Написать функцию, которая принимает список дат в формате 'ДД.ММ.ГГГГ' и возвращает список дат в формате 'ГГГГ-ММ-ДД', отсортированный по возрастанию.'''
 
-
+date_list_upd = []
 def date(array):
     for i in range(len(array)):
-        i = datetime.strptime(i, '%d-%m-%Y')
-    array.sort(key=lambda x: time.mktime(time.strptime(x,"%Y-%m-%d")))
+        date_list_upd.append('-'.join(i.split('.')[::-1]))
 
 print(date(['19-05-2003', '03-06-2004', '21-06-2008','30-05-2023']))

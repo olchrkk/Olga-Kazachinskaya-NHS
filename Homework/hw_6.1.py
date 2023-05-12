@@ -37,7 +37,6 @@ print(first_index_A(['apple', 'banana', 'america']))
 '''6. Напишите функцию, которая принимает на вход список чисел и возвращает список чисел, которые больше 10 и меньше 20. '''
 
 def between_numbers(array):
-    # return list(filter(lambda x: 10<x<20, array))
     return list(filter(lambda x: x in range(10,20), array))
 
 print(even_numbers([20, 1, 11, 5, 18, 25]))
@@ -51,11 +50,14 @@ print(find_string(['hello','hi','lera','lola']))
 
 '''8. Напишите функцию, которая принимает на вход список чисел и возвращает True, если все числа в списке положительные, и False в противном случае. '''
 
-# def positive_numbers(array):
-#     for i in array:
-#         return True if i>0 else False
-#
-# print(positive_numbers([1, 2, -3, 4, 5]))
+def positive_numbers(array):
+    for i in array:
+        if i<=0:
+            return False
+        else:
+            return True
+
+print(positive_numbers([1, 2, 3, 4, 5]))
 
 
 '''9. Напишите функцию, которая принимает на вход список строк и возвращает список строк, которые содержат только цифры. '''
@@ -86,12 +88,12 @@ print(popular_string(['hello','hi','hola','hi']))
 
 '''2. Напишите функцию, которая принимает на вход два списка и возвращает новый список, содержащий элементы, которые есть в обоих списках. '''
 
-# a = [1,2,3,4]
-# b = [5,6,7,8]
-# def two_lists(a,b):
-#     return a.extend(b)
-#
-# print(two_lists(a,b))
+a = [1,2,3,4]
+b = [5,6,7,8]
+def two_lists(a,b):
+    return a.extend(b)
+
+print(two_lists(a,b))
 
 '''3. Напишите функцию, которая принимает на вход строку и возвращает количество слов в этой строке, в которых есть более 3-х гласных (a, e, i, o, u).'''
 
