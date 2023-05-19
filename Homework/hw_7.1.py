@@ -40,11 +40,13 @@ print(new_first_index(['hello', 'alex', 'word', 'Adam']))
 def new_array(array):
     my_array = []
     for num in array:
-        res = [i+1 for i in num]
-        my_array+=res
+        z = []
+        for i in num:
+            z.append(i+1)
+        my_array.append(z)
     return my_array
 
-print(new_array([[3,5],[4,8]]))
+print(new_array([[3,5],[6,7]]))
 
 '''1. Напишите функцию, которая принимает на вход список чисел и возвращает новый список,
 содержащий те же числа, но отсортированные по возрастанию.'''

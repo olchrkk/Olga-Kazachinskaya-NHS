@@ -1,0 +1,6 @@
+
+;python:S125"Remove this commented out code.(êº—ùÿÿÿÿ
+Bpython:S1481"*Remove the unused local variable "length".(ÿ†š
+Gpython:S1481 "*Remove the unused local variable "length".(Å¨×úÿÿÿÿ
+hpython:S1226"KIntroduce a new variable or use its initial value before reassigning 'num'.(¯˜•€úÿÿÿÿ
+`python:S5655#"CChange this argument; Function "palindrom" expects a different type(·åØøÿÿÿÿ
