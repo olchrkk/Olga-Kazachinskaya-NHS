@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68589e3a-4913-4d92-8129-f10c555c6684" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/hw_10.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw_9.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/daab19bbf37b3d6bee98b2bc24167f718896c8e8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/a/daab19bbf37b3d6bee98b2bc24167f718896c8e8" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw_11.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw_12.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw_13.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
